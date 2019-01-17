@@ -1,1 +1,267 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 15px 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+  font-family: 'Nunito', sans-serif;
+}
+html,
+body {
+  /* 10px if the browser was 16px*/
+  /* 1rem === 10px @ medium browser settings */
+  font-size: 62.5%;
+  height: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.container header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.container header nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 30px;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    margin: auto;
+  }
+}
+.container header nav a:hover {
+  text-decoration: underline;
+}
+.container .CTA {
+  background-color: #dddddd;
+  padding: 20px;
+  margin-top: 25px;
+}
+.container .middle-section {
+  display: flex;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .container .middle-section {
+    flex-wrap: wrap;
+  }
+}
+.container .middle-section .middle-left {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container .middle-section .middle-left {
+    width: 100%;
+  }
+}
+.container .middle-section .middle-right {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container .middle-section .middle-right {
+    width: 100%;
+  }
+}
+.container .middle-section .middle-right li {
+  border: 1px solid black;
+  font-size: 1.6rem;
+  padding: 10px;
+  font-family: 'Nunito', sans-serif;
+}
+.container .work-history {
+  margin-top: 25px;
+}
+.container table {
+  font-size: 1.6rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+.container table td,
+.container table th {
+  border-top: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.container table th {
+  font-weight: 600;
+}
+.container table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.container .contact {
+  margin-top: 25px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.9rem;
+}
+.container footer {
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 40px 0;
+  color: white;
+  font-size: 1.8rem;
+  margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
